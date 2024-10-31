@@ -8,3 +8,4 @@ vless://34b3cbba-e6ac-495a-9481-976a0419eab9@104.18.3.2:443?path=%2F&security=tl
 vless://89b2cbba-e6ac-487a-9481-976a0415eab9@104.18.3.2:443?path=%2F&security=tls&encryption=none&host=EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV&type=ws&sni=eSetseCUriTYlICeNsE.vUhbGol.wOrKers.DeV#235+%F0%9F%87%B8%F0%9F%87%AC+ALIBABA+%28US%29+TECHNOLOGY+CO.%2C+LTD.+WS+CDN+TLS
 vless://f69a85fe-4a6e-40f3-bcd0-f3c800388b58@104.18.3.2:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=sg.vlcfpages.my.id&fp=randomized&type=ws&sni=sg.vlcfpages.my.id#sg.vlcfpages.my.id
 vless://0bc51b14-02aa-40db-aeba-8a9569a7244d@104.17.3.81:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=id.vlcfpages.my.id&fp=randomized&type=ws&sni=id.vlcfpages.my.id#id.vlcfpages.my.id
+vless://d342d11e-d424-4583-b36e-524ab1f0afa4@104.17.3.81:443?path=%2Fvlesscf&security=tls&encryption=none&host=id.servless.us.to&type=ws&sni=id.servless.us.to#id.servless.us.to
