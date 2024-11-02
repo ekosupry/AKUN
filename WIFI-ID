@@ -10,3 +10,4 @@ vless://f69a85fe-4a6e-40f3-bcd0-f3c800388b58@104.18.3.2:443?path=%2F%3Fed%3D2048
 vless://0bc51b14-02aa-40db-aeba-8a9569a7244d@104.18.3.2:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=id.vlcfpages.my.id&fp=randomized&type=ws&sni=id.vlcfpages.my.id#id.vlcfpages.my.id
 vless://d342d11e-d424-4583-b36e-524ab1f0afa4@104.18.3.2:443?path=%2Fvlesscf&security=tls&encryption=none&host=id.servless.us.to&type=ws&sni=id.servless.us.to#id.servless.us.to
 vless://d342d11e-d424-4583-b36e-524ab1f0afa4@104.18.3.2:443?path=%2Fvlesscf&security=tls&encryption=none&host=sg.servless.us.to&type=ws&sni=sg.servless.us.to#sg.servless.us.to
+vless://80510fd1-7a7d-4b83-a3db-05fb7f23dea5@104.18.3.2:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=id2.knc.my.id&type=ws&sni=id2.knc.my.id#BYU+KNC+2
