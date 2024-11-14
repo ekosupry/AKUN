@@ -1992,8 +1992,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
     -  BEST PING
+    -  FALLBACK
     -  LOAD-BALANCE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
@@ -2005,9 +2005,9 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  LOAD-BALANCE
     -  BEST PING
     -  FALLBACK
-    -  LOAD-BALANCE
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -2067,8 +2067,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
     -  BEST PING
+    -  FALLBACK
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
@@ -2081,8 +2081,8 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  FALLBACK
     -  BEST PING
+    -  FALLBACK
     -  LOAD-BALANCE
     -  DIRECT
     -  REJECT
@@ -2138,7 +2138,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  Afkar 75
+    -  Afkar 11
     -  Afkar 76
     -  Afkar 77
     -  Afkar 78
@@ -2152,7 +2152,7 @@ proxy-groups:
     -  Afkar 8
     -  Afkar 9
     -  Afkar 10
-    -  Afkar 11
+    -  Afkar 75
     -  Afkar 12
     -  Afkar 13
     -  Afkar 14
