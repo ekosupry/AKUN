@@ -12,3 +12,5 @@ vless://0bc51b14-02aa-40db-aeba-8a9569a7244d@space.byu.id:443?path=%2F%3Fed%3D20
 vless://d342d11e-d424-4583-b36e-524ab1f0afa4@space.byu.id:443?path=%2Fvlesscf&security=tls&encryption=none&host=id.servless.us.to&type=ws&sni=id.servless.us.to#id.servless.us.to
 vless://d342d11e-d424-4583-b36e-524ab1f0afa4@space.byu.id:443?path=%2Fvlesscf&security=tls&encryption=none&host=sg.servless.us.to&type=ws&sni=sg.servless.us.to#sg.servless.us.to
 vless://80510fd1-7a7d-4b83-a3db-05fb7f23dea5@space.byu.id:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=id2.knc.my.id&type=ws&sni=id2.knc.my.id#BYU+KNC+2
+vless://13ab4101-16cc-4b9c-b182-5c14e80a5014@space.byu.id:443?path=%2Fid2&security=tls&encryption=none&host=mmx.vpnoir9r.us.kg&fp=randomized&type=ws&sni=mmx.vpnoir9r.us.kg#Google+LLC+%28ID%29
+vless://84cbe796-8cb1-4bfe-95dc-a44ee80fe842@space.byu.id:443?path=%2Fbuy-vless-ws-pm-telegram-at-synricha&security=tls&encryption=none&host=atp.sing-box.id&type=ws&sni=atp.sing-box.id#vless_ws_atp.sing-box.id_VVIPv
