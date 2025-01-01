@@ -1,6 +1,6 @@
 proxies:
   - name: VLESS SG ALIBABA Replace
-    server: space.byu.id
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
