@@ -1,1 +1,17 @@
-eko
+proxies:
+  - name: VLESS SG ALIBABA Replace
+    server: space.byu.id
+    port: 443
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    udp: true
