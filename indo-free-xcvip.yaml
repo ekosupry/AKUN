@@ -1,17 +1,17 @@
 proxies:
-  - name: VLESS SG ALIBABA Replace
+  - name: VMESS PRO
     server: 104.17.3.81
     port: 443
-    type: vless
-    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    type: vmess
+    uuid: 32c8611d-7ec4-4c8e-a202-023be1686b0f
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    servername: rw.srpcom.online
     network: ws
     ws-opts:
-      path: /
+      path: /vmessws
       headers:
-        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+        Host: rw.srpcom.online
     udp: true
