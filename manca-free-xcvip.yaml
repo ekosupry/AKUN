@@ -1,6 +1,6 @@
 proxies:
   - name: VLESS SG ALIBABA 235
-    server: space.byu.id
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
@@ -17,7 +17,7 @@ proxies:
     udp: true
 
   - name: VLESS SG GOOGLE
-    server: space.byu.id
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 01edb904-33ae-42cf-99d4-28f96082082e
