@@ -1863,53 +1863,42 @@ proxies:
 
   - name: Afkar Pro 1
     server: 104.18.3.2
-    port: 655
-    type: vless
-    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
-    alterId: 0
-    cipher: auto
-    tls: true
+    port: 443
+    type: trojan
+    password: srpcomvip-asep
     skip-cert-verify: true
-    servername: id.knc.my.id
+    sni: do.srpcom.online
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /trojan
       headers:
-        Host: id.knc.my.id
+        Host: do.srpcom.online
     udp: true
 
   - name: Afkar Pro 2
     server: 104.18.3.2
-    port: 655
-    type: vless
-    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
-    alterId: 0
-    cipher: auto
-    tls: true
+    port: 443
+    type: trojan
+    password: srpcomvip-asep
+    network: grpc
+    sni: do.srpcom.online
     skip-cert-verify: true
-    servername: id2.knc.my.id
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: id2.knc.my.id
     udp: true
+    grpc-opts:
+      grpc-service-name: trojan
 
   - name: Afkar Pro 3
     server: 104.18.3.2
-    port: 655
-    type: vless
-    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
-    alterId: 0
-    cipher: auto
-    tls: false
+    port: 443
+    type: trojan
+    password: srpcomvip-asep
     skip-cert-verify: true
-    servername: id2.knc.my.id
-    network: ws
+    sni: do.srpcom.online
+    network: httpupgrade
     ws-opts:
-      path: /?ed=2048
+      path: /uptrojan
       headers:
-        Host: id2.knc.my.id
+        Host: do.srpcom.online
     udp: true
 
   - name: Afkar Pro 4
@@ -1936,7 +1925,7 @@ proxies:
 proxy-groups:
 # Global kita gunakan untuk koneksi UMUM
 - name: "Global✅"
-  type: url-test
+  type: fallback
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -2110,7 +2099,7 @@ proxy-groups:
   proxies:
     -  DIRECT
     -  LOBBY GAME
-    -  BEST PING
+    -  FALLBACK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #⬜⬜
@@ -2134,6 +2123,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SERVER PRO
+    -  FALLBACK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -2146,6 +2136,7 @@ proxy-groups:
   disable-udp: false
   proxies:
     -  SERVER PRO
+    -  FALLBACK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -2155,8 +2146,8 @@ proxy-groups:
 - name: "AKUN BANK"
   type: select
   proxies:
-    -  LOBBY GAME
     -  BEST PING
+    -  LOBBY GAME
     -  LOAD-BALANCE
     -  FALLBACK
     -  DIRECT
@@ -2168,10 +2159,10 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
+    -  FALLBACK
     -  REJECT
     -  LOAD-BALANCE
     -  BEST PING
-    -  FALLBACK
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -2201,11 +2192,11 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
-    -  Afkar 75
+    -  Afkar 1
     -  Afkar 76
     -  Afkar 77
     -  Afkar 78
-    -  Afkar 1
+    -  Afkar 55
     -  Afkar 2
     -  Afkar 3
     -  Afkar 4
@@ -2259,7 +2250,7 @@ proxy-groups:
     -  Afkar 52
     -  Afkar 53
     -  Afkar 54
-    -  Afkar 55
+    -  Afkar 75
     -  Afkar 56
     -  Afkar 57
     -  Afkar 58
