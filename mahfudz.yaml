@@ -82,56 +82,64 @@ proxies:
   - name: Afkar Pro 1
     server: 104.18.3.2
     port: 443
-    type: trojan
-    password: srpcomvip-asep
-    network: ws
-    sni: do.srpcom.online
-    skip-cert-verify: true
+    type: vmess
+    uuid: srpcomvip-mahfud3ip
+    cipher: auto
+    tls: true
     udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: do.srpcom.online
     ws-opts:
-      path: /uptrojan
-    headers:
-      Host: do.srpcom.online
+      path: /vmess
+      headers:
+        Host: do.srpcom.online
 
   - name: Afkar Pro 2
     server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: srpcomvip-asep
+    port: 80
+    type: vmess
+    uuid: srpcomvip-mahfud3ip
+    cipher: auto
+    tls: false
+    udp: true
     skip-cert-verify: true
-    sni: do.srpcom.online
     network: ws
+    servername: do.srpcom.online
     ws-opts:
-      path: /trojan
+      path: /vmess
       headers:
         Host: do.srpcom.online
-    udp: true
 
   - name: Afkar Pro 3
     server: 104.18.3.2
     port: 443
-    type: trojan
-    password: srpcomvip-asep
+    type: vmess
+    uuid: srpcomvip-mahfud3ip
+    alterId: 0
+    cipher: auto
     network: grpc
-    sni: do.srpcom.online
+    tls: true
+    servername: do.srpcom.online
     skip-cert-verify: true
-    udp: true
     grpc-opts:
-      grpc-service-name: trojan
+      grpc-service-name: vmess
 
   - name: Afkar Pro 4
     server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: srpcomvip-asep
-    skip-cert-verify: true
-    sni: do.srpcom.online
-    network: httpupgrade
-    ws-opts:
-      path: /uptrojan
-      headers:
-        Host: do.srpcom.online
+    port: 80
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    cipher: auto
+    tls: false
     udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
     
   - name: Afkar Pro 5
     server: 104.18.3.2
