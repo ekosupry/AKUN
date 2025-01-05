@@ -1,0 +1,94 @@
+proxies: 
+  - name: Afkar Pro 7
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: srpcomvip-mahfud3ip
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: do.srpcom.online
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: do.srpcom.online
+        
+  - name: Afkar Pro 8
+    server: 104.18.3.2
+    port: 80
+    type: vmess
+    uuid: srpcomvip-mahfud3ip
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: do.srpcom.online
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: do.srpcom.online
+
+  - name: Afkar Pro 9
+    server: 104.18.3.2
+    port: 443
+    type: vmess
+    uuid: srpcomvip-mahfud3ip
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: do.srpcom.online
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vmess
+
+  - name: Afkar Pro 10
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    
+  - name: Afkar Pro 11
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: sgdo.lotush.my.id
+    ws-opts:
+      path: /trixie
+      headers:
+        Host: sgdo.lotush.my.id
+     
+  - name: Afkar Pro 12
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    ws-opts:
+      path: /
+      headers:
+        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
