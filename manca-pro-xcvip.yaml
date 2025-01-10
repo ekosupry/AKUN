@@ -32,37 +32,3 @@ proxies:
       headers:
         Host: do3.srpcom.online
     udp: true
-    
-  - name: VLESS SG ALIBABA 235
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
-    udp: true
-
-  - name: VLESS SG GOOGLE
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 01edb904-33ae-42cf-99d4-28f96082082e
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sgdo.lotush.my.id
-    network: ws
-    ws-opts:
-      path: /trixie
-      headers:
-        Host: sgdo.lotush.my.id
-    udp: true
