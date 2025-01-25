@@ -1,6 +1,6 @@
 proxies:
   - name: VMESS PRO TLS
-    server: 104.17.3.81
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: 32c8611d-7ec4-4c8e-a202-023be1686b0f
@@ -17,7 +17,7 @@ proxies:
     udp: true
     
   - name: VMESS PRO NTLS
-    server: 104.17.3.81
+    server: 104.18.225.52
     port: 80
     type: vmess
     uuid: 32c8611d-7ec4-4c8e-a202-023be1686b0f
