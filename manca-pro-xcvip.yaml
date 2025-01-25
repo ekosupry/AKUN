@@ -1,6 +1,6 @@
 proxies:
   - name: SG Pro 3
-    server: 104.17.3.81
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: dcf43199-ff92-4224-b7cb-114a935e6925
@@ -17,7 +17,7 @@ proxies:
     udp: true
 
   - name: SG Pro 4
-    server: 104.17.3.81
+    server: 104.18.225.52
     port: 80
     type: vmess
     uuid: dcf43199-ff92-4224-b7cb-114a935e6925
