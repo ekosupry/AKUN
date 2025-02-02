@@ -57,7 +57,7 @@ dns:
   ipv6: true
   prefer-h3: false
   default-nameserver:
-    - 94.140.14.14
+    - 1.1.1.1
   listen: 0.0.0.0:1053
   use-hosts: true
   enhanced-mode: fake-ip
@@ -67,7 +67,7 @@ dns:
     "*.localhost",
   ]
   nameserver:
-    - 94.140.14.14
+    - 1.0.0.1
   fallback: []
   fallback-filter:
     geoip: false
@@ -83,63 +83,61 @@ proxies:
     server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: srpcomvip-mahfud3ip
+    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: do.srpcom.online
+    servername: ca.srpcom.online
     ws-opts:
-      path: /vmess
+      path: /vmessws
       headers:
-        Host: do.srpcom.online
-
+        Host: ca.srpcom.online
+        
   - name: Afkar Pro 2
     server: 104.18.3.2
     port: 80
     type: vmess
-    uuid: srpcomvip-mahfud3ip
+    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
     cipher: auto
     tls: false
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: do.srpcom.online
+    servername: ca.srpcom.online
     ws-opts:
-      path: /vmess
+      path: /vmessws
       headers:
-        Host: do.srpcom.online
-
+        Host: ca.srpcom.online
+        
   - name: Afkar Pro 3
     server: 104.18.3.2
     port: 443
     type: vmess
-    uuid: srpcomvip-mahfud3ip
-    alterId: 0
-    cipher: auto
+    password: ac5564cb-e1ac-4953-92f9-252013f89796
     network: grpc
-    tls: true
-    servername: do.srpcom.online
+    sni: ca.srpcom.online
     skip-cert-verify: true
+    udp: true
     grpc-opts:
-      grpc-service-name: vmess
+      grpc-service-name: vmessws
 
-  - name: Afkar Pro 4
+  - name: Afkar Pro 1
     server: 104.18.3.2
-    port: 80
-    type: vless
-    uuid: 89b2cbba-e6ac-487a-9481-976a0415eab9
+    port: 443
+    type: vmess
+    uuid: ac5564cb-e1ac-4953-92f9-252013f89796
     cipher: auto
-    tls: false
+    tls: true
     udp: true
     skip-cert-verify: true
     network: ws
-    servername: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+    servername: ca.srpcom.online
     ws-opts:
-      path: /
+      path: /vmessws
       headers:
-        Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+        Host: ca.srpcom.online
     
   - name: Afkar Pro 5
     server: 104.18.3.2
@@ -172,6 +170,38 @@ proxies:
       path: /
       headers:
         Host: EsETSecURityLIcensE.vUhbGOL.wORkERs.dEV
+
+  - name: Afkar Pro 7
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
+
+  - name: Afkar Pro 7
+    server: 104.18.3.2
+    port: 80
+    type: vless
+    uuid: 80510fd1-7a7d-4b83-a3db-05fb7f23dea5
+    cipher: auto
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: id.knc.my.id
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: id.knc.my.id
 #🔴
 #🔴_____________________________________proxies______________________________________🔴
 #
@@ -189,6 +219,7 @@ proxy-groups:
     -  Afkar Pro 4
     -  Afkar Pro 5
     -  Afkar Pro 6
+    -  Afkar Pro 7
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -200,6 +231,7 @@ proxy-groups:
     -  FALLBACK
     -  BEST PING
     -  LOAD-BALANCE
+    -  SERVER PRO
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -210,6 +242,7 @@ proxy-groups:
   strategy: round-robin
   disable-udp: false
   proxies:
+    -  SERVER PRO
     -  BEST PING
     -  FALLBACK
     -  LOAD-BALANCE
@@ -218,7 +251,7 @@ proxy-groups:
   interval: 300
 #Koneksi Sosmed
 - name: "LOBBY GAME"
-  type: url-test #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
+  type: fallback #PILIIH SALAH SATU : SELECT,LOAD-BALANCE,FALLBACK,URL-TEST
   strategy: round-robin
   disable-udp: false
   proxies:
@@ -228,6 +261,7 @@ proxy-groups:
     -  Afkar Pro 4
     -  Afkar Pro 5
     -  Afkar Pro 6
+    -  Afkar Pro 7
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 #Koneksi Sosmed
@@ -251,6 +285,8 @@ proxy-groups:
     -  LOAD-BALANCE
     -  FALLBACK
     -  BEST PING
+    -  SERVER PRO
+    -  FALLBACK
     -  DIRECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -285,10 +321,10 @@ proxy-groups:
 - name: "AKUN BANK"
   type: select
   proxies:
+    -  FALLBACK
     -  BEST PING
     -  LOBBY GAME
     -  LOAD-BALANCE
-    -  FALLBACK
     -  DIRECT
     -  REJECT
   url: 'http://www.gstatic.com/generate_204'
@@ -298,10 +334,10 @@ proxy-groups:
 - name: "MARKETPLACE"
   type: select
   proxies:
-    -  FALLBACK
-    -  REJECT
-    -  LOAD-BALANCE
     -  BEST PING
+    -  FALLBACK
+    -  LOAD-BALANCE
+    -  REJECT
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -320,9 +356,9 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-    -  SERVER PRO
     -  REJECT
     -  DIRECT
+    -  SERVER PRO
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -337,6 +373,7 @@ proxy-groups:
     -  Afkar Pro 4
     -  Afkar Pro 5
     -  Afkar Pro 6
+    -  Afkar Pro 7
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
   #koneksi untuk iklan,
@@ -351,6 +388,7 @@ proxy-groups:
     -  Afkar Pro 4
     -  Afkar Pro 5
     -  Afkar Pro 6
+    -  Afkar Pro 7
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -366,6 +404,7 @@ proxy-groups:
     -  Afkar Pro 4
     -  Afkar Pro 5
     -  Afkar Pro 6
+    -  Afkar Pro 7
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
@@ -376,9 +415,6 @@ proxy-groups:
     -  Afkar Pro 1
     -  Afkar Pro 2
     -  Afkar Pro 3
-    -  Afkar Pro 4
-    -  Afkar Pro 5
-    -  Afkar Pro 6
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
  #⬜⬜
