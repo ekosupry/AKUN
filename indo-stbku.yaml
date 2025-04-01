@@ -50,7 +50,7 @@ proxies:
         Host: ca.srpcom.online
     udp: true
     
-  - name: VMESS PRO NTLS
+  - name: NETFLIX PRO NTLS
     server: cache.netflix.com
     port: 80
     type: vmess
