@@ -1,6 +1,6 @@
 proxies:
   - name: VMESS PRO TLS
-    server: bayar.ruangguru.com
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -17,7 +17,7 @@ proxies:
     udp: true
     
   - name: VMESS PRO NTLS
-    server: bayar.ruangguru.com
+    server: 104.18.225.52
     port: 80
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -34,7 +34,7 @@ proxies:
     udp: true
 
   - name: NETFLIX PRO TLS
-    server: bayar.ruangguru.com
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
