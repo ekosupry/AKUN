@@ -1,21 +1,4 @@
 proxies:
-  - name: VMESS BACKUP TLS
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: d776b463-da23-427f-82ec-b74e88aa23e5
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ca.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: ca.srpcom.online
-    udp: true
-    
   - name: VMESS PRO NTLS
     server: 104.17.3.81
     port: 80
