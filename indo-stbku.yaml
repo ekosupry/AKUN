@@ -66,5 +66,31 @@ proxies:
       headers:
         Host: ca.srpcom.online
     udp: true
-    
-    
+
+  - name: Ajie 443
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: 15f4b4f3-9b27-4d54-8686-98a4b4fdc755
+    skip-cert-verify: true
+    sni: hst.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: hst.srpcom.online
+    udp: true
+
+  - name: Ajie 80
+    server: 104.17.3.81
+    port: 80
+    type: trojan
+    password: 15f4b4f3-9b27-4d54-8686-98a4b4fdc755
+    skip-cert-verify: true
+    sni: hst.srpcom.online
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: hst.srpcom.online
+    udp: true
