@@ -1,5 +1,5 @@
 proxies:
-  - name: SG Pro 3
+  - name: SG DO4 SRPCOM 443
     server: 104.17.3.81
     port: 443
     type: vmess
@@ -16,7 +16,7 @@ proxies:
         Host: do4.srpcom.online
     udp: true
 
-  - name: SG Pro 4
+  - name: SG DO4 SRPCOM 80
     server: 104.17.3.81
     port: 80
     type: vmess
@@ -33,7 +33,7 @@ proxies:
         Host: do4.srpcom.online
     udp: true
 
-  - name: SG NETFLIX TLS
+  - name: SG DO4 SRPCOM TLS
     server: 104.17.3.81
     port: 443
     type: vmess
@@ -50,7 +50,7 @@ proxies:
         Host: do4.srpcom.online
     udp: true
 
-  - name: SG NETFLIX NTLS
+  - name: SG DO4 SRPCOM NTLS
     server: 104.17.3.81
     port: 80
     type: vmess
