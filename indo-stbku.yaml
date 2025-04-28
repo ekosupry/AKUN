@@ -1,5 +1,21 @@
 proxies:
-  - name: VMESS PRO NTLS
+  - name: SRPCOM TLS
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ca.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ca.srpcom.online
+    udp: true
+  - name: SRPCOM NTLS
     server: 104.17.3.81
     port: 80
     type: vmess
@@ -16,24 +32,7 @@ proxies:
         Host: ca.srpcom.online
     udp: true
 
-  - name: VMESS TLS
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ca.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: ca.srpcom.online
-    udp: true
-
-  - name: NETFLIX PRO TLS
+  - name: SRPCOM 443
     server: 104.17.3.81
     port: 443
     type: vmess
@@ -50,7 +49,7 @@ proxies:
         Host: ca.srpcom.online
     udp: true
     
-  - name: NETFLIX PRO NTLS
+  - name: SRPCOM 80
     server: 104.17.3.81
     port: 80
     type: vmess
