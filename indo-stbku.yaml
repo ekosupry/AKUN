@@ -66,7 +66,7 @@ proxies:
         Host: ca.srpcom.online
     udp: true
 
-  - name: Ajie 443
+  - name: AJIE TLS
     server: 104.17.3.81
     port: 443
     type: trojan
@@ -80,7 +80,7 @@ proxies:
         Host: hst.srpcom.online
     udp: true
 
-  - name: Ajie 80
+  - name: AJIE NTLS
     server: 104.17.3.81
     port: 80
     type: trojan
