@@ -1,6 +1,6 @@
 proxies:
   - name: SRPCOM TLS
-    server: ava.game.naver.com
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -8,15 +8,15 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.ca.srpcom.online
+    servername: ca.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: ava.game.naver.com.ca.srpcom.online
+        Host: ca.srpcom.online
     udp: true
   - name: SRPCOM NTLS
-    server: ava.game.naver.com
+    server: 104.18.225.52
     port: 80
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -24,16 +24,16 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: ava.game.naver.com.ca.srpcom.online
+    servername: ca.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: ava.game.naver.com.ca.srpcom.online
+        Host: ca.srpcom.online
     udp: true
 
   - name: SRPCOM 443
-    server: ava.game.naver.com
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -41,16 +41,16 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.ca.srpcom.online
+    servername: ca.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: ava.game.naver.com.ca.srpcom.online
+        Host: ca.srpcom.online
     udp: true
     
   - name: SRPCOM 80
-    server: ava.game.naver.com
+    server: 104.18.225.52
     port: 80
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -58,38 +58,38 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: ava.game.naver.com.ca.srpcom.online
+    servername: ca.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: ava.game.naver.com.ca.srpcom.online
+        Host: ca.srpcom.online
     udp: true
 
   - name: AJIE TLS
-    server: ava.game.naver.com
+    server: 104.18.225.52
     port: 443
     type: trojan
     password: 15f4b4f3-9b27-4d54-8686-98a4b4fdc755
     skip-cert-verify: true
-    sni: ava.game.naver.com.hst.srpcom.online
+    sni: hst.srpcom.online
     network: ws
     ws-opts:
       path: /trojanws
       headers:
-        Host: ava.game.naver.com.hst.srpcom.online
+        Host: hst.srpcom.online
     udp: true
 
   - name: AJIE NTLS
-    server: ava.game.naver.com
+    server: 104.18.225.52
     port: 80
     type: trojan
     password: 15f4b4f3-9b27-4d54-8686-98a4b4fdc755
     skip-cert-verify: true
-    sni: ava.game.naver.com.hst.srpcom.online
+    sni: hst.srpcom.online
     network: ws
     ws-opts:
       path: /trojanws
       headers:
-        Host: ava.game.naver.com.hst.srpcom.online
+        Host: hst.srpcom.online
     udp: true
