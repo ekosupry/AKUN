@@ -1,6 +1,6 @@
 proxies:
   - name: SG DO4 SRPCOM 443
-    server: ava.game.naver.com
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -8,16 +8,16 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.do4.srpcom.online
+    servername: do4.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: ava.game.naver.com.do4.srpcom.online
+        Host: do4.srpcom.online
     udp: true
 
   - name: SG DO4 SRPCOM 80
-    server: ava.game.naver.com
+    server: 104.18.225.52
     port: 80
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -25,16 +25,16 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: ava.game.naver.com.do4.srpcom.online
+    servername: do4.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: ava.game.naver.com.do4.srpcom.online
+        Host: do4.srpcom.online
     udp: true
 
   - name: SG DO4 SRPCOM TLS
-    server: ava.game.naver.com
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -42,16 +42,16 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.do4.srpcom.online
+    servername: do4.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: ava.game.naver.com.do4.srpcom.online
+        Host: do4.srpcom.online
     udp: true
 
   - name: SG DO4 SRPCOM NTLS
-    server: ava.game.naver.com
+    server: 104.18.225.52
     port: 80
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -59,10 +59,10 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: ava.game.naver.com.do4.srpcom.online
+    servername: do4.srpcom.online
     network: ws
     ws-opts:
       path: /vmessws
       headers:
-        Host: ava.game.naver.com.do4.srpcom.online
+        Host: do4.srpcom.online
     udp: true
