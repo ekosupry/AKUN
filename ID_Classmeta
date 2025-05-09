@@ -1,6 +1,6 @@
 proxies:
   - name: SRPCOM TLS
-    server: 104.17.3.81
+    server: bayar.ruangguru.com
     port: 443
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -16,7 +16,7 @@ proxies:
         Host: ca.srpcom.online
     udp: true
   - name: SRPCOM NTLS
-    server: 104.17.3.81
+    server: bayar.ruangguru.com
     port: 80
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -33,7 +33,7 @@ proxies:
     udp: true
 
   - name: SRPCOM 443
-    server: 104.17.3.81
+    server: bayar.ruangguru.com
     port: 443
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -50,7 +50,7 @@ proxies:
     udp: true
     
   - name: SRPCOM 80
-    server: 104.17.3.81
+    server: bayar.ruangguru.com
     port: 80
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -67,7 +67,7 @@ proxies:
     udp: true
 
   - name: AJIE TLS
-    server: 104.17.3.81
+    server: bayar.ruangguru.com
     port: 443
     type: trojan
     password: 15f4b4f3-9b27-4d54-8686-98a4b4fdc755
@@ -81,7 +81,7 @@ proxies:
     udp: true
 
   - name: AJIE NTLS
-    server: 104.17.3.81
+    server: bayar.ruangguru.com
     port: 80
     type: trojan
     password: 15f4b4f3-9b27-4d54-8686-98a4b4fdc755
