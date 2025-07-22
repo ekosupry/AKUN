@@ -1,6 +1,6 @@
 proxies:
   - name: SRPCOM TLS
-    server: cache.netflix.com
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: 351a6c86-7f9c-46a3-b84e-70693b3115aa
@@ -16,7 +16,7 @@ proxies:
         Host: ca.srpcom.online
     udp: true
   - name: SRPCOM NTLS
-    server: cache.netflix.com
+    server: 104.18.225.52
     port: 80
     type: vmess
     uuid: 351a6c86-7f9c-46a3-b84e-70693b3115aa
@@ -33,7 +33,7 @@ proxies:
     udp: true
 
   - name: SRPCOM 443
-    server: cache.netflix.com
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: 351a6c86-7f9c-46a3-b84e-70693b3115aa
@@ -50,7 +50,7 @@ proxies:
     udp: true
     
   - name: SRPCOM 80
-    server: cache.netflix.com
+    server: 104.18.225.52
     port: 80
     type: vmess
     uuid: 351a6c86-7f9c-46a3-b84e-70693b3115aa
@@ -67,7 +67,7 @@ proxies:
     udp: true
 
   - name: AJIE TLS
-    server: cache.netflix.com
+    server: 104.18.225.52
     port: 443
     type: trojan
     password: 15f4b4f3-9b27-4d54-8686-98a4b4fdc755
@@ -81,7 +81,7 @@ proxies:
     udp: true
 
   - name: AJIE NTLS
-    server: cache.netflix.com
+    server: 104.18.225.52
     port: 80
     type: trojan
     password: 15f4b4f3-9b27-4d54-8686-98a4b4fdc755
