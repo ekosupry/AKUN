@@ -1,6 +1,6 @@
 proxies:
   - name: SG DO4 SRPCOM 443
-    server: cache.netflix.com
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -17,7 +17,7 @@ proxies:
     udp: true
 
   - name: SG DO4 SRPCOM 80
-    server: cache.netflix.com
+    server: 104.18.225.52
     port: 80
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -34,7 +34,7 @@ proxies:
     udp: true
 
   - name: SG DO4 SRPCOM TLS
-    server: cache.netflix.com
+    server: 104.18.225.52
     port: 443
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
@@ -51,7 +51,7 @@ proxies:
     udp: true
 
   - name: SG DO4 SRPCOM NTLS
-    server: cache.netflix.com
+    server: 104.18.225.52
     port: 80
     type: vmess
     uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
