@@ -1,4 +1,18 @@
 proxies:
+  - name: Afk4r GRPC
+    server: 104.18.225.52
+    port: 443
+    type: vmess
+    uuid: a085a058-2d1d-4085-b083-c076c051896e
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: ca.srpcom.online
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vmessgrpc
+      
   - name: SRPCOM TLS
     server: 104.18.225.52
     port: 443
