@@ -1,4 +1,16 @@
 proxies:
+  - name: Afk4r GRPC
+    type: trojan
+    server: 104.17.3.81
+    port: 443
+    password: 107ac33f-a497-485f-85a6-e4300d1d4371
+    udp: true
+    sni: natan.srpcom.online
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojangrpc
+   
   - name: SRPCOM TLS
     server: 104.17.3.81
     port: 443
