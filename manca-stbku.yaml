@@ -77,22 +77,7 @@ proxies:
       path: /vmessws
       headers:
         Host: do4.srpcom.online
-    udp: true    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: do4.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: do4.srpcom.online
-    udp: true
-
+    udp: true    
   - name: SG DO4 SRPCOM NTLS
     server: 104.17.3.81
     port: 80
