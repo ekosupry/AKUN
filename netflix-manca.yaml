@@ -1,68 +1,12 @@
 proxies:
-  - name: SG DO4 SRPCOM 443
+  - name: R4fka GRPC
+    type: trojan
     server: cache.netflix.com
     port: 443
-    type: vmess
-    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: do4.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: do4.srpcom.online
+    password: 1efa1ea4-62d2-4ec9-9d49-498f0d69d2d1
     udp: true
-
-  - name: SG DO4 SRPCOM 80
-    server: cache.netflix.com
-    port: 80
-    type: vmess
-    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
-    alterId: 0
-    cipher: auto
-    tls: false
+    sni: do3.srpcom.online
     skip-cert-verify: true
-    servername: do4.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: do4.srpcom.online
-    udp: true
-
-  - name: SG DO4 SRPCOM TLS
-    server: cache.netflix.com
-    port: 443
-    type: vmess
-    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: do4.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: do4.srpcom.online
-    udp: true
-
-  - name: SG DO4 SRPCOM NTLS
-    server: cache.netflix.com
-    port: 80
-    type: vmess
-    uuid: c19a0d69-5f9f-4109-a609-aaaf91c45ff6
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: do4.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: do4.srpcom.online
-    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojangrpc
