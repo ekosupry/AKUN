@@ -1,7 +1,7 @@
 proxies:
   - name: Afk4r GRPC
     type: trojan
-    server: cache.netflix.com
+    server: 104.19.143.108
     port: 443
     password: 107ac33f-a497-485f-85a6-e4300d1d4371
     udp: true
@@ -11,97 +11,3 @@ proxies:
     grpc-opts:
       grpc-service-name: trojangrpc
    
-  - name: SRPCOM TLS
-    server: cache.netflix.com
-    port: 443
-    type: vmess
-    uuid: 351a6c86-7f9c-46a3-b84e-70693b3115aa
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ca.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: ca.srpcom.online
-    udp: true
-  - name: SRPCOM NTLS
-    server: cache.netflix.com
-    port: 80
-    type: vmess
-    uuid: 351a6c86-7f9c-46a3-b84e-70693b3115aa
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: ca.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: ca.srpcom.online
-    udp: true
-
-  - name: SRPCOM 443
-    server: cache.netflix.com
-    port: 443
-    type: vmess
-    uuid: 351a6c86-7f9c-46a3-b84e-70693b3115aa
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ca.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: ca.srpcom.online
-    udp: true
-    
-  - name: SRPCOM 80
-    server: cache.netflix.com
-    port: 80
-    type: vmess
-    uuid: 351a6c86-7f9c-46a3-b84e-70693b3115aa
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: ca.srpcom.online
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: ca.srpcom.online
-    udp: true
-
-  - name: AJIE TLS
-    server: cache.netflix.com
-    port: 443
-    type: trojan
-    password: 15f4b4f3-9b27-4d54-8686-98a4b4fdc755
-    skip-cert-verify: true
-    sni: hst.srpcom.online
-    network: ws
-    ws-opts:
-      path: /trojanws
-      headers:
-        Host: hst.srpcom.online
-    udp: true
-
-  - name: AJIE NTLS
-    server: cache.netflix.com
-    port: 80
-    type: trojan
-    password: 15f4b4f3-9b27-4d54-8686-98a4b4fdc755
-    skip-cert-verify: true
-    sni: hst.srpcom.online
-    network: ws
-    ws-opts:
-      path: /trojanws
-      headers:
-        Host: hst.srpcom.online
-    udp: true
