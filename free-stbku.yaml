@@ -34,6 +34,38 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
+  - name: ekosupry TLS
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 5a728c4d-5d5f-4eda-b28e-7db3069ed0af
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: at.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+        Host: at.srpcom.online
+    udp: true
+
+  - name: ekosupry NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 5a728c4d-5d5f-4eda-b28e-7db3069ed0af
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: at.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+        Host: at.srpcom.online
+    udp: true
+
   - name: TRIAL ROUTING
     server: 104.17.3.81
     port: 443
