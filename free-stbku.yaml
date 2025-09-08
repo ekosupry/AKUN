@@ -34,7 +34,7 @@ proxies:
         Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
     udp: true
 
-  - name: VLESS EKOSUPRY 443
+  - name: NETFLIX EKOSUPRY 443
     server: cache.netflix.com
     port: 443
     type: vless
@@ -51,7 +51,7 @@ proxies:
         Host: at.srpcom.online
     udp: true
 
-  - name: VLESS EKOSUPRY 80
+  - name: NETFLIX EKOSUPRY 80
     server: cache.netflix.com
     port: 80
     type: vless
