@@ -35,7 +35,7 @@ proxies:
     udp: true
 
   - name: VLESS EKOSUPRY 443
-    server: 104.17.3.81
+    server: cache.netflix.com
     port: 443
     type: vless
     uuid: 5a728c4d-5d5f-4eda-b28e-7db3069ed0af
@@ -52,7 +52,7 @@ proxies:
     udp: true
 
   - name: VLESS EKOSUPRY 80
-    server: 104.17.3.81
+    server: cache.netflix.com
     port: 80
     type: vless
     uuid: 5a728c4d-5d5f-4eda-b28e-7db3069ed0af
