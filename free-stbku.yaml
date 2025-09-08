@@ -1,0 +1,69 @@
+proxies:
+# Akun INDO port 443 
+  - name: WORKER GAME 443
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: NS-stoRE.NSiDIK685.WorkerS.DEV
+    network: ws
+    ws-opts:
+      path: /4oZzyMSMxWn395MA/dGVuY2VudC5yaW4tdG9oc2FrYWdhbmdiYW5nLmZpbGVnZWFyLXNnLm1l?ed=2560
+      headers:
+        Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
+    udp: true
+
+  - name: WORKER GAME 80
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: NS-stoRE.NSiDIK685.WorkerS.DEV
+    network: ws
+    ws-opts:
+      path: /4oZzyMSMxWn395MA/dGVuY2VudC5yaW4tdG9oc2FrYWdhbmdiYW5nLmZpbGVnZWFyLXNnLm1l?ed=2560
+      headers:
+        Host: Ns-stOrE.NSIDIk685.WORkeRs.DEv
+    udp: true
+
+  - name: VLESS EKOSUPRY 443
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 5a728c4d-5d5f-4eda-b28e-7db3069ed0af
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: at.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: at.srpcom.online
+    udp: true
+
+  - name: VLESS EKOSUPRY 80
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: 5a728c4d-5d5f-4eda-b28e-7db3069ed0af
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: at.srpcom.online
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: at.srpcom.online
+    udp: true
