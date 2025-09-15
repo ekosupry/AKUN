@@ -67,3 +67,37 @@ proxies:
       headers:
         Host: at.srpcom.online
     udp: true
+
+  - name: NETFLIX 083192580755 443
+    server: cache.netflix.com
+    port: 443
+    type: vless
+    uuid: 6f7addbd-e5b5-4b5e-8131-66e96323b1f7
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vpn.order083192580755gas.workers.dev
+    network: ws
+    ws-opts:
+      path: /live/NDMuMjE4Ljc3LjE2/?ed=2048
+      headers:
+        Host: vpn.order083192580755gas.workers.dev
+    udp: true
+
+  - name: NETFLIX 083192580755 80
+    server: cache.netflix.com
+    port: 80
+    type: vless
+    uuid: 6f7addbd-e5b5-4b5e-8131-66e96323b1f7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vpn.order083192580755gas.workers.dev
+    network: ws
+    ws-opts:
+      path: /live/NDMuMjE4Ljc3LjE2/?ed=2048
+      headers:
+        Host: vpn.order083192580755gas.workers.dev
+    udp: true
