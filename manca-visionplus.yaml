@@ -1,11 +1,11 @@
 proxies:
   - name: R4fka GRPC
     type: trojan
-    server: 104.17.3.81
+    server: ava.game.naver.com
     port: 443
     password: 1efa1ea4-62d2-4ec9-9d49-498f0d69d2d1
     udp: true
-    sni: do3.srpcom.online
+    sni: ava.game.naver.com.do3.srpcom.online
     skip-cert-verify: true
     network: grpc
     grpc-opts:
