@@ -1,7 +1,7 @@
 proxies:
 # Akun INDO port 443 
   - name: WORKER GAME 443
-    server: ava.game.naver.com
+    server: 104.18.214.235
     port: 443
     type: vless
     uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
@@ -18,7 +18,7 @@ proxies:
     udp: true
 
   - name: WORKER GAME 80
-    server: ava.game.naver.com
+    server: 104.18.214.235
     port: 80
     type: vless
     uuid: 1e6611ce-aec7-4a64-8699-d7d731659f05
@@ -35,7 +35,7 @@ proxies:
     udp: true
 
   - name: NETFLIX 083192580755 443
-    server: ava.game.naver.com
+    server: 104.18.214.235
     port: 443
     type: vless
     uuid: 6f7addbd-e5b5-4b5e-8131-66e96323b1f7
@@ -52,7 +52,7 @@ proxies:
     udp: true
 
   - name: NETFLIX 083192580755 80
-    server: ava.game.naver.com
+    server: 104.18.214.235
     port: 80
     type: vless
     uuid: 6f7addbd-e5b5-4b5e-8131-66e96323b1f7
@@ -69,7 +69,7 @@ proxies:
     udp: true
     
   - name: NETFLIX EKOSUPRY 443
-    server: ava.game.naver.com
+    server: 104.18.214.235
     port: 443
     type: vless
     uuid: 5a728c4d-5d5f-4eda-b28e-7db3069ed0af
@@ -86,7 +86,7 @@ proxies:
     udp: true
 
   - name: NETFLIX EKOSUPRY 80
-    server: ava.game.naver.com
+    server: 104.18.214.235
     port: 80
     type: vless
     uuid: 5a728c4d-5d5f-4eda-b28e-7db3069ed0af
