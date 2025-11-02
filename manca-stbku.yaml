@@ -10,3 +10,20 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: trojangrpc
+
+  - name: 10 lowh net 443
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: 6a2cdeb0-b840-11f0-b545-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: 10.lowh.net
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: 10.lowh.net
+    udp: true
