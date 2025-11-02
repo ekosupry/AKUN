@@ -45,3 +45,20 @@ proxies:
       headers:
         Host: 10.lowh.net
     udp: true
+
+  - name: sg-vless-ws.bypass.id
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 04eaec20-b841-11f0-9ace-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-vless-ws.bypass.id
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: sg-vless-ws.bypass.id
+    udp: true
