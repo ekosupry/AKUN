@@ -72,3 +72,20 @@ proxies:
       headers:
         Host: 14.lowh.net
     udp: true
+
+  - name: 2.htmlcdn.net
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: 98a03300-b85f-11f0-9f98-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 2.htmlcdn.net
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: 2.htmlcdn.net
+    udp: true
