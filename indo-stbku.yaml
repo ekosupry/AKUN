@@ -70,6 +70,23 @@ proxies:
         Host: 14.lowh.net
     udp: true
 
+  - name: hz2.cobadl.com
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: ac1ff6c0-b860-11f0-b22d-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: hz2.cobadl.com
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: hz2.cobadl.com
+    udp: true
+
   - name: 14 lowh net 80
     server: 104.17.3.81
     port: 80
