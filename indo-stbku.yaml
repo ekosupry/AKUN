@@ -39,6 +39,20 @@ proxies:
         Host: biznet1.1server.co
     udp: true
 
+  - name: hz1.cobadl.com
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: b451dd20-b85f-11f0-b583-1577c1651679
+    skip-cert-verify: true
+    sni: hz1.cobadl.com
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: hz1.cobadl.com
+    udp: true
+
   - name: 14 lowh net 443
     server: 104.17.3.81
     port: 443
