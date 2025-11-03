@@ -25,6 +25,20 @@ proxies:
         Host: 15.lowh.net
     udp: true
 
+  - name: biznet1.1server.co
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: e7add7e0-b840-11f0-b736-1577c1651679
+    skip-cert-verify: true
+    sni: biznet1.1server.co
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: biznet1.1server.co
+    udp: true
+
   - name: 14 lowh net 443
     server: 104.17.3.81
     port: 443
