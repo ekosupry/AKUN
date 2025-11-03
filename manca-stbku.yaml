@@ -62,3 +62,20 @@ proxies:
       headers:
         Host: sg-vless-ws.bypass.id
     udp: true
+
+  - name: sghz.htmlcdn.net
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: 14bf1530-b841-11f0-981a-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sghz.htmlcdn.net
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: sghz.htmlcdn.net
+    udp: true
