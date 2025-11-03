@@ -79,3 +79,20 @@ proxies:
       headers:
         Host: sghz.htmlcdn.net
     udp: true
+
+  - name: 2 html cdn
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: d3de0860-b840-11f0-80cc-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: 2.htmlcdn.net
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: 2.htmlcdn.net
+    udp: true
