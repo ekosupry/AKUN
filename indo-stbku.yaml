@@ -11,6 +11,20 @@ proxies:
     grpc-opts:
       grpc-service-name: trojangrpc
 
+  - name: 15.lowh.net
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: bd74b4c0-b840-11f0-a130-1577c1651679
+    skip-cert-verify: true
+    sni: 15.lowh.net
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: 15.lowh.net
+    udp: true
+
   - name: 14 lowh net 443
     server: 104.17.3.81
     port: 443
