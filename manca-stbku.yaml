@@ -1,7 +1,7 @@
 proxies:
   - name: R4fka GRPC
     type: trojan
-    server: 104.17.3.81
+    server: 104.18.1.196
     port: 443
     password: 1efa1ea4-62d2-4ec9-9d49-498f0d69d2d1
     udp: true
@@ -12,7 +12,7 @@ proxies:
       grpc-service-name: trojangrpc
 
   - name: 10 lowh net 443
-    server: 104.17.3.81
+    server: 104.18.1.196
     port: 443
     type: vmess
     uuid: 6a2cdeb0-b840-11f0-b545-1577c1651679
@@ -30,7 +30,7 @@ proxies:
 
 
   - name: 10 lowh net 80
-    server: 104.17.3.81
+    server: 104.18.1.196
     port: 443
     type: vmess
     uuid: 85c01280-b840-11f0-adbc-1577c1651679
@@ -47,7 +47,7 @@ proxies:
     udp: true
 
   - name: sg-vless-ws.bypass.id
-    server: 104.17.3.81
+    server: 104.18.1.196
     port: 443
     type: vless
     uuid: 04eaec20-b841-11f0-9ace-1577c1651679
@@ -64,7 +64,7 @@ proxies:
     udp: true
 
   - name: sghz.htmlcdn.net
-    server: 104.17.3.81
+    server: 104.18.1.196
     port: 443
     type: vmess
     uuid: 14bf1530-b841-11f0-981a-1577c1651679
@@ -81,7 +81,7 @@ proxies:
     udp: true
 
   - name: 2 html cdn
-    server: 104.17.3.81
+    server: 104.18.1.196
     port: 443
     type: vmess
     uuid: d3de0860-b840-11f0-80cc-1577c1651679
