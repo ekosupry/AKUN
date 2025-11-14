@@ -1,6 +1,127 @@
 proxies:
   - name: Afk4r GRPC
     type: trojan
+    server: 104.18.1.196
+    port: 443
+    password: 107ac33f-a497-485f-85a6-e4300d1d4371
+    udp: true
+    sni: natan.srpcom.online
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojangrpc
+
+  - name: 15.lowh.net
+    server: 104.18.1.196
+    port: 443
+    type: trojan
+    password: bd74b4c0-b840-11f0-a130-1577c1651679
+    skip-cert-verify: true
+    sni: 15.lowh.net
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: 15.lowh.net
+    udp: true
+
+  - name: biznet1.1server.co
+    server: 104.18.1.196
+    port: 443
+    type: trojan
+    password: e7add7e0-b840-11f0-b736-1577c1651679
+    skip-cert-verify: true
+    sni: biznet1.1server.co
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: biznet1.1server.co
+    udp: true
+
+  - name: hz1.cobadl.com
+    server: 104.18.1.196
+    port: 443
+    type: trojan
+    password: b451dd20-b85f-11f0-b583-1577c1651679
+    skip-cert-verify: true
+    sni: hz1.cobadl.com
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+        Host: hz1.cobadl.com
+    udp: true
+
+  - name: 14 lowh net 443
+    server: 104.18.1.196
+    port: 443
+    type: vmess
+    uuid: 9681d860-b840-11f0-b7ca-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: 14.lowh.net
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: 14.lowh.net
+    udp: true
+
+  - name: hz2.cobadl.com
+    server: 104.18.1.196
+    port: 443
+    type: vmess
+    uuid: ac1ff6c0-b860-11f0-b22d-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: hz2.cobadl.com
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: hz2.cobadl.com
+    udp: true
+
+  - name: 14 lowh net 80
+    server: 104.18.1.196
+    port: 80
+    type: vmess
+    uuid: a6f12b40-b840-11f0-9d40-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 14.lowh.net
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: 14.lowh.net
+    udp: true
+
+  - name: 2.htmlcdn.net
+    server: 104.18.1.196
+    port: 80
+    type: vmess
+    uuid: 98a03300-b85f-11f0-9f98-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: 2.htmlcdn.net
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: 2.htmlcdn.net
+    udp: true:
+  - name: Afk4r GRPC
+    type: trojan
     server: 104.17.3.81
     port: 443
     password: 107ac33f-a497-485f-85a6-e4300d1d4371
