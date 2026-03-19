@@ -53,8 +53,8 @@ proxies:
         Host: hz1.cobadl.com
     udp: true
 
-  - name: ILMUPEDIA
-    server: 104.18.3.2
+  - name: EDUKASI
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: 8c004963-eb4a-4172-97b4-f5f29b9a9ef7
