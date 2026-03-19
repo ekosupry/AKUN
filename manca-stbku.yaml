@@ -46,7 +46,7 @@ proxies:
         Host: 10.lowh.net
     udp: true
 
-  - name: sg-vless-ws.bypass.id
+  - name: EDUKASI 80
     server: 104.17.3.81
     port: 80
     type: vless
