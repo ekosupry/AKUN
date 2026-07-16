@@ -164,3 +164,17 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: trojan
+      
+  - name: FREE 5
+    server: 104.17.3.81
+    port: 443
+    type: trojan
+    password: ebe24b94-e2dd-48c8-a8c1-565ee5857e0f
+    skip-cert-verify: true
+    sni: access.mysignal.cyou
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: access.mysignal.cyou
+    udp: true
