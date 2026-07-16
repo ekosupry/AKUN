@@ -57,17 +57,17 @@ proxies:
     server: 104.17.3.81
     port: 443
     type: vless
-    uuid: 8c004963-eb4a-4172-97b4-f5f29b9a9ef7
+    uuid: 867bde16-6bf1-4204-8137-8e824d0578ad
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id7.srpcom.cloud
+    servername: at.srpcom.cloud
     network: ws
     ws-opts:
       path: /vlessws
       headers:
-        Host: id7.srpcom.cloud
+        Host: at.srpcom.cloud
     udp: true
 
   - name: hz2.cobadl.com
