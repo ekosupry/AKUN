@@ -101,3 +101,20 @@ proxies:
       headers:
         Host: at.srpcom.online
     udp: true
+    
+  - name: FREE 1
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: a9e26685-0030-4325-b6e3-362922c5bdea
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: investors.spotify.com.v2.kopi.ccwu.cc
+    network: ws
+    ws-opts:
+      path: /ALL
+      headers:
+        Host: investors.spotify.com.v2.kopi.ccwu.cc
+    udp: true
