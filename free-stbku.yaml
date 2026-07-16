@@ -118,3 +118,20 @@ proxies:
       headers:
         Host: investors.spotify.com.v2.kopi.ccwu.cc
     udp: true
+    
+  - name: FREE 2
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: ebe24b94-e2dd-48c8-a8c1-565ee5857e0f
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: access.mysignal.cyou
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: access.mysignal.cyou
+    udp: true
