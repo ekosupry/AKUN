@@ -152,3 +152,15 @@ proxies:
       headers:
         Host: access.mysignal.cyou
     udp: true
+    
+  - name: FREE 4
+    type: trojan
+    server: 104.17.3.81
+    port: 443
+    password: ebe24b94-e2dd-48c8-a8c1-565ee5857e0f
+    udp: true
+    sni: access.mysignal.cyou
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan
