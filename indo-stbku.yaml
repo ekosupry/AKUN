@@ -1,4 +1,20 @@
 proxies:
+  - name: EDUKASI
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: aa7af861-be44-413f-8eb6-69a6522a5334
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: at.srpcom.cloud
+    network: ws
+    ws-opts:
+      path: /vlessws
+      headers:
+        Host: at.srpcom.cloud
+    udp: true
   - name: Afk4r GRPC
     type: trojan
     server: 104.18.1.196
@@ -51,23 +67,6 @@ proxies:
       path: /welcome
       headers:
         Host: hz1.cobadl.com
-    udp: true
-
-  - name: EDUKASI
-    server: 104.17.3.81
-    port: 443
-    type: vless
-    uuid: 867bde16-6bf1-4204-8137-8e824d0578ad
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: at.srpcom.cloud
-    network: ws
-    ws-opts:
-      path: /vlessws
-      headers:
-        Host: at.srpcom.cloud
     udp: true
 
   - name: hz2.cobadl.com
