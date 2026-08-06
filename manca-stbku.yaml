@@ -14,7 +14,7 @@ proxies:
   - name: Afkarstore 443
     server: 104.17.3.81
     port: 443
-    type: vmess
+    type: vless
     uuid: c66e4a43-25e1-419a-b75e-cd62a72232d3
     alterId: 0
     cipher: auto
