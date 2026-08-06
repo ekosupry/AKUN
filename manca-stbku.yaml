@@ -11,39 +11,39 @@ proxies:
     grpc-opts:
       grpc-service-name: trojangrpc
 
-  - name: 10 lowh net 443
-    server: 104.18.1.196
+  - name: Afkarstore 443
+    server: 104.17.3.81
     port: 443
     type: vmess
-    uuid: 6a2cdeb0-b840-11f0-b545-1577c1651679
+    uuid: c66e4a43-25e1-419a-b75e-cd62a72232d3
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: 10.lowh.net
+    servername: do3.srpcom.cloud
     network: ws
     ws-opts:
-      path: /hello
+      path: /vlessws
       headers:
-        Host: 10.lowh.net
+        Host: do3.srpcom.cloud
     udp: true
 
 
-  - name: 10 lowh net 80
-    server: 104.18.1.196
-    port: 443
-    type: vmess
-    uuid: 85c01280-b840-11f0-adbc-1577c1651679
+  - name: Afkarstore 80
+    server: 104.17.3.81
+    port: 80
+    type: vless
+    uuid: c66e4a43-25e1-419a-b75e-cd62a72232d3
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: 10.lowh.net
+    servername: do3.srpcom.cloud
     network: ws
     ws-opts:
-      path: /worryfree
+      path: /vlessws
       headers:
-        Host: 10.lowh.net
+        Host: do3.srpcom.cloud
     udp: true
 
   - name: EDUKASI 80
