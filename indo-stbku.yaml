@@ -1,18 +1,4 @@
-proxies:
-  - name: ekombelgedez
-    server: 104.17.3.81
-    port: 443
-    type: trojan
-    password: 479a026c-03d0-4bd7-895b-146fc645cc58
-    skip-cert-verify: true
-    sni: do3.srpcom.cloud
-    network: ws
-    ws-opts:
-      path: /trojanws
-      headers:
-        Host: do3.srpcom.cloud
-    udp: true
-    
+proxies: 
   - name: FREE 6
     server: 104.17.3.81
     port: 443
