@@ -17,7 +17,7 @@ proxies:
     
   - name: Afk4r GRPC
     type: trojan
-    server: 104.18.1.196
+    server: 104.17.3.81
     port: 443
     password: 107ac33f-a497-485f-85a6-e4300d1d4371
     udp: true
@@ -26,9 +26,23 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: trojangrpc
-
+      
+  - name: ekosupry
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 995bdbaa-957e-438a-9531-5ca124be822d
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: at.srpcom.cloud
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: vlessgrpc
+      
   - name: 15.lowh.net
-    server: 104.18.1.196
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: bd74b4c0-b840-11f0-a130-1577c1651679
@@ -42,7 +56,7 @@ proxies:
     udp: true
 
   - name: biznet1.1server.co
-    server: 104.18.1.196
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: e7add7e0-b840-11f0-b736-1577c1651679
@@ -56,7 +70,7 @@ proxies:
     udp: true
 
   - name: hz1.cobadl.com
-    server: 104.18.1.196
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: b451dd20-b85f-11f0-b583-1577c1651679
@@ -70,7 +84,7 @@ proxies:
     udp: true
 
   - name: hz2.cobadl.com
-    server: 104.18.1.196
+    server: 104.17.3.81
     port: 443
     type: vmess
     uuid: ac1ff6c0-b860-11f0-b22d-1577c1651679
@@ -87,7 +101,7 @@ proxies:
     udp: true
 
   - name: 14 lowh net 80
-    server: 104.18.1.196
+    server: 104.17.3.81
     port: 80
     type: vmess
     uuid: a6f12b40-b840-11f0-9d40-1577c1651679
@@ -104,7 +118,7 @@ proxies:
     udp: true
 
   - name: 2.htmlcdn.net
-    server: 104.18.1.196
+    server: 104.17.3.81
     port: 80
     type: vmess
     uuid: 98a03300-b85f-11f0-9f98-1577c1651679
